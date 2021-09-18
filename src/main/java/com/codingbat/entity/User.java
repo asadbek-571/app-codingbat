@@ -23,4 +23,7 @@ public class User {
 
     @Column(name = "password",nullable = false)
     private String password;
+
+    @Column(name = "active",nullable = false)
+    private boolean active=true;
 }

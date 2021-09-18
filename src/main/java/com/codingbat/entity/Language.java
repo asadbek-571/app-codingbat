@@ -1,6 +1,4 @@
 package com.codingbat.entity;
-
-import com.codingbat.enums.Languages;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -19,11 +17,13 @@ public class Language {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(name = "name")
-    private String description;
 
-    @Column(nullable = false)
-    @Enumerated(EnumType.STRING)
-    private Languages languages;
+    @Column(name = "name",nullable = false)
+    private String  name;
+
+
+    @Column(name = "status")
+    private boolean status=true;
+
 
 }

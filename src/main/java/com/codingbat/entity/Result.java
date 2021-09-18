@@ -29,4 +29,7 @@ public class Result {
 
     @Column(name = "response_result",nullable = false)
     private String responseResult;
+
+    @Column(name = "is_correct",nullable = false)
+    private boolean isCorrect;
 }
